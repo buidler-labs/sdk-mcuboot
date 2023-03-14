@@ -12,7 +12,7 @@ cmake_minimum_required(VERSION 3.13.1)
 # the list).
 if(DTC_OVERLAY_FILE)
   set(DTC_OVERLAY_FILE
-    "${DTC_OVERLAY_FILE} ${CMAKE_CURRENT_LIST_DIR}/dts.overlay"
+    "${DTC_OVERLAY_FILE};${CMAKE_CURRENT_LIST_DIR}/dts.overlay"
     CACHE STRING "" FORCE
     )
 else()
